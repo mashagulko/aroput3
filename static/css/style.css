@@ -1,0 +1,147 @@
+/* Общие настройки */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f0f4f1;
+    margin: 0;
+    color: #3a4a24;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Хедер */
+header {
+    background: linear-gradient(90deg, #7da453, #4a6b2a);
+    padding: 25px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    color: #f0f4f1;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 0 0 10px 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: #e6f0d4;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 25px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4e7a0;
+}
+
+/* Основной контент */
+main {
+    background: #ffffff;
+    padding: 30px 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(74,107,42,0.15);
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #4a6b2a;
+    margin-top: 0;
+    font-size: 2rem;
+    border-bottom: 3px solid #7da453;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    color: #556b2f;
+}
+
+a {
+    color: #7da453;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #4a6b2a;
+    text-decoration: underline;
+}
+
+/* Формы и тест */
+fieldset {
+    border: 2px solid #7da453;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background: #f7f9f5;
+}
+
+legend {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #4a6b2a;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #3a4a24;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #7da453;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(74,107,42,0.4);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a6b2a;
+}
+
+/* Футер */
+footer {
+    background: #d9e6c2;
+    padding: 20px 0;
+    margin-top: 50px;
+    color: #4a6b2a;
+    font-size: 0.9rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    main {
+        padding: 20px 15px;
+    }
+    nav a {
+        margin-right: 15px;
+        font-size: 1rem;
+    }
+}

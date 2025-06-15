@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Результат теста{% endblock %}
+{% block content %}
+<h2>Вам подходит профессия: {{ profession_name }}</h2>
+<p>{{ profession.description }}</p>
+<p><strong>Реальные истории:</strong> {{ profession.stories }}</p>
+<p><strong>Зарплата:</strong> {{ profession.salary }}</p>
+<h3>Учебные заведения:</h3>
+<ul>
+    {% for edu in profession.education_links %}
+    <li><a href="{{ edu.url }}" target="_blank">{{ edu.name }}</a></li>
+    {% endfor %}
+</ul>
+<p><a href="{{ url_for('profession_page', profession_name=profession_name) }}">Подробнее о профессии</a></p>
+{% endblock %}

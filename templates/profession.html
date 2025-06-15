@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ profession_name }}{% endblock %}
+{% block content %}
+<h2>{{ profession_name }}</h2>
+<p>{{ profession.description }}</p>
+<p><strong>Реальные истории:</strong> {{ profession.stories }}</p>
+<p><strong>Зарплата:</strong> {{ profession.salary }}</p>
+<h3>Учебные заведения:</h3>
+<ul>
+    {% for edu in profession.education_links %}
+    <li><a href="{{ edu.url }}" target="_blank">{{ edu.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

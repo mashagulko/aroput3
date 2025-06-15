@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Тест-опрос{% endblock %}
+{% block content %}
+<h2>Тест-опрос</h2>
+<form method="post">
+    {% for q in questions %}
+        {% set q_index = loop.index0 %}
+        <fieldset>
+            <legend>{{ q.question }}</legend>
+            {% for option in q.options %}
+                <label>
+                    <input type="radio" name="q{{ q_index }}" value="{{ loop.index0 }}" required>
+                    {{ option }}
+                </label><br/>
+            {% endfor %}
+        </fieldset>
+    {% endfor %}
+    <button type="submit">Отправить</button>
+</form>
+{% endblock %}
